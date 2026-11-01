@@ -23,7 +23,7 @@ st.markdown(
     
     /* Transform Streamlit buttons into gorgeous white cards */
     div.stButton > button {
-        background-color: #black;
+        background-color: #blue;
         color: #0f172a;
         border-radius: 16px;
         padding: 30px 20px;
