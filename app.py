@@ -17,13 +17,14 @@ st.markdown(
     <style>
     .stApp {
         background: #000000;
-        background-attachment: fixed;
+     background-attachment: fixed;
+     color: #FFFFFF;
     }
     
     /* Transform Streamlit buttons into gorgeous white cards */
     div.stButton > button {
-        background-color: #FFFFFF;
-        color: #FFFFFF;
+        background-color: #black;
+        color: #0f172a;
         border-radius: 16px;
         padding: 30px 20px;
         height: 140px;
@@ -43,8 +44,8 @@ st.markdown(
         transform: translateY(-6px);
         box-shadow: 0 20px 30px -10px rgba(14, 165, 233, 0.3);
         border-color: #0ea5e9;
-        background-color: #2A2A2A;
-        color: #60A5FA;
+        background-color: #f8fafc;
+        color: #0284c7;
     }
     </style>
     """,
@@ -480,7 +481,7 @@ if df is not None:
                         y=bar_y,
                         title=f"Top 10 {bar_x} by {bar_y}",
                         color=bar_y,
-                        template="plotly_dark",
+                        template="plotly_white",
                     )
                     st.plotly_chart(fig_bar, width="stretch")
                 else:
@@ -504,7 +505,7 @@ if df is not None:
                         values="Count",
                         title=f"Share Distribution by {pie_col}",
                         hole=0.4,
-                        template="plotly_dark",
+                        template="plotly_white",
                     )
                     st.plotly_chart(fig_pie, width="stretch")
                 else:
